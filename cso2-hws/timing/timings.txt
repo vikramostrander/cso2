@@ -1,0 +1,14 @@
+experiment conditions:
+	nothing timed and stored as control to avoid measurement overhead
+	each test repeated over 0.5 seconds and the average is stored as avg
+	output is avg minus control
+
+1. calling empty():			1 ns
+
+2. calling getpid():			3 ns
+
+3. calling system("/bin/true"):		2,752,486 ns
+
+4. signal to current process:		1,781 ns
+
+5. signal to other process:		9,572 ns

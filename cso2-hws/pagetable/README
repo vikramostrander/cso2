@@ -1,0 +1,30 @@
+Pagetable Documentation
+
+Customizing Pagetable
+    All customizing is done through config.h
+    LEVELS: number of levels in the pagetable. Can take values {1 ... 6}.
+    POBITS: number of bits for the page offset. Can take values {4 ... 18}.
+    To change a value, change the value to the right of the variable.
+
+Example Use Case:
+    An educational tool to aid in the understanding of address translation
+    in pagetables, and how pagetables with different numbers of levels and 
+    different numbers of bits used for the page offset work.
+
+Bugs/Limitations:
+    Allocated memory is not freed in current implementation.
+
+ACKNOWLEDGEMENTS:
+    None.
+
+De-Allocation Issues:
+    The current deallocate implementation needs to be called once for all
+    pagetables: 
+
+        page_deallocate(ptbr);
+    
+    This implementation of page deallocate, however, is slow, especially
+    for multi-level page tables. A better implementation would be keeping
+    track of each call to page_allocate, and freeing only what is needed,
+    but this could require storing many addresses which would require
+    allocating more memory.

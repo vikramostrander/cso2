@@ -1,0 +1,19 @@
+Chosen License: GPL
+
+GPL:
+    Allows for unrestricted copy and distribution, but disallows
+    modification. Guarantees the program will remain free software for
+    all of its users. Selected GPL to ensure the program will remain as
+    free software for all users.
+
+MIT License:
+    Allows for unrestricted use, copy, modificatoin, publishing, 
+    distribution, sublicencing, and sale of this software and associated 
+    documentation. Did not select MIT as I would like to ensure the
+    program cannot be modified and sold by another individual.
+
+BSD:
+    Allows for use with and without modification if redistribution
+    retains the copyright notice, all conditions and documentation, and
+    the name of the copyright holder cannot be used to endorse or
+    promote products derived from this software without permission.
